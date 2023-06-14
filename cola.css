@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+#left{
+    min-height: 100vh;
+    width: 50%;
+    background-color: white;
+}
+#right{
+    min-height: 100vh;
+    width: 50%;
+    background-color: rgb(143, 15, 15);
+}
+#can{
+    z-index: 9;
+    position: absolute;
+    height: 82%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#navbar{
+    position: absolute;
+    /* height: 10vh; */
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+
+}
+#logo{
+    height: 70px;
+}
+#left #navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+}
+#left #navbar #chacha{
+    color: red;
+    border-bottom: 2px solid red;
+}
+#chachi{
+    position: absolute;
+    height: 50%;
+    left: 0;
+    top: 17%;
+}
+h3{
+    position: absolute;
+    top: 58%;
+    font-size: 15px;
+    left: 6%;
+    font-weight: 6000;
+
+}
+button{
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    height: 47px;
+    width: 170px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* background-color:rgb(238, 39, 39); */
+    background: linear-gradient(to bottom right ,rgba(0, 0, 0, 0.637), red,rgb(255, 70, 70),rgb(255, 0, 0),red,rgba(0, 0, 0, 0.781));
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+#menu{
+    display: none;
+}
+#desc{
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    /* background-color: yellow; */
+    top: 30%;
+    right: 8%;
+}
+h2{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+#line{
+    width: 38%;
+    height: 3px;
+    background-color: #fff;
+}
+.bar{
+    color: #fff;
+}
+.whitebar{
+    width: 80%;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 35px;
+}
+#fill{
+    width: 10%;
+    height: inherit;
+    border-radius: 35px;
+    background-color: red;
+}
+.square{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 22%;
+    background-color: cornflowerblue;
+}
+@media(max-width:500px){
+
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    #right{
+        width: 100%;
+    }
+
+    #chachi {
+        height: 40%;
+        left: -55px;
+        top: 70%;
+    }
+
+    #can{ 
+    height: 56%;
+    left: 48%;
+    top: 41%;
+    }
+
+    #navbar a{
+        display: none;
+    }
+
+    #menu{
+        display: initial;
+    }
+
+}
